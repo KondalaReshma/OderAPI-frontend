@@ -1,0 +1,21 @@
+
+<h1>WishList</h1>
+<div class="container">
+    <div class="card" *ngFor ="let item of wishlistService.getItems();" >
+      <div class="card-head">
+        <img src="{{item.imagepath}}" alt="">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">{{item.name}}</h5>
+        <p class="card-text"></p>
+        
+        <p class="card-text">Price:{{item.price}}</p>
+        <p class="card-text">Quantity:{{item.quantity}}</p>
+        
+         <div style="display:flex; gap :10px">
+          <button class="btn btn-primary " (click) ="onDelete(item)">Delete</button>
+          <button class="btn btn-primary " (click) ="Buy()">Buy</button>
+
+        </div>
+      </div>
+    </div>

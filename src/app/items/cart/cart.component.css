@@ -1,0 +1,25 @@
+/* .clearfix{
+
+    border-color: black;
+    border-width: 2px;
+    width: 800px;
+
+}
+.card{
+    width:800px;
+    
+} */
+.card img{
+    height: 160px;
+}
+.card{
+    width: 400px;
+    border: 3px solid black;
+    display: flex;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+.card-text{
+    padding-right: 5px;
+}

@@ -1,0 +1,49 @@
+ <app-header></app-header>
+<p>cart-list component works!</p>
+<!-- <div class="row">
+    <div class="col-sm-12"  style="width: 18rem;" *ngFor ="let item of cartService.getItems();"  class="list-group-item clearfix ">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{item.name}}</h5>
+          <p class="card-text"></p>
+          
+          <p class="card-text">Price:{{item.price}}</p>
+          <p class="card-text">Quantity:{{item.quantity}}</p>
+          
+           <div style="display:flex; gap :10px">
+            <button class="btn btn-primary "  (click) ="onDelete(item)">Delete</button>
+            <button class="btn btn-primary "  (click) ="cartService.incrementQuantity(item.id)">+</button>
+            <button class="btn btn-primary "  (click) ="cartService.decrementQuantity(item.id)">-</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>  -->     
+<div class="container">
+  <div class="card" *ngFor ="let item of cartService.getItems();" >
+    <div class="card-head">
+      <img src="{{item.imagepath}}" alt="">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{item.name}}</h5>
+      <p class="card-text"></p>
+      
+      <p class="card-text">Price:{{item.price}}</p>
+      <p class="card-text">Quantity:{{item.quantity}}</p>
+      
+       <div style="display:flex; gap :10px">
+        <button class="btn btn-primary "  (click) ="onDelete(item)">Delete</button>
+        <button class="btn btn-primary "  (click) ="cartService.incrementQuantity(item.id)">+</button>
+        <button class="btn btn-primary "  (click) ="cartService.decrementQuantity(item.id)">-</button>
+      </div>
+    </div>
+  </div>
+  <h1>Total:{{cartService.getTotal() }}</h1>
+
+  <div>
+     <button class="btn-primary" (click) ="NavigateToPayment()">Proceed to Payment</button>
+  </div>
+</div>
+
+
+    

@@ -1,0 +1,74 @@
+<p>manageaddress works!</p>
+<div class="row">
+    <div class="col-xs-12">
+        <form  (ngSubmit) = "onSubmit(f)"  #f = "ngForm"> 
+          <div class="row">
+            <div class="col-sm-5 form-group">
+
+              <label for ="StreetName">StreetName</label>
+                 <input 
+                 type ="text"
+                  id="name"
+                  class="form-control"
+                  ngModel
+                  name="streetname"
+                  required>
+
+                  
+              <label for ="State">City</label>
+                <input 
+                type ="text" 
+                id="name" 
+                class="form-control"
+                ngModel
+                name = "city"
+                required 
+                 ngModel>
+                
+                <label for ="State">State</label>
+                <input 
+                type ="text" 
+                id="name" 
+                class="form-control"
+                ngModel
+                name = "state"
+                required>
+
+                <label for ="Country">Country</label>
+                <input 
+                type ="text"
+                 id="name"
+                 class="form-control"
+                 ngModel
+                 name="country"
+                 required>
+
+                 
+
+
+                <label for ="Pincode">Pincode</label>
+                <input 
+                type ="text"
+                 id="name"
+                 class="form-control"
+                 ngModel
+                 name="pincode"
+                 required
+                 >
+
+            </div>
+           
+          </div>
+          <div class="row" ></div>>
+            <div class="col-sm-5 form-group" style="display:inline-flex; gap :15px">
+                <button type = "submit" class="btn btn-primary">Add Address </button>
+                <button type = "submit" class="btn btn-primary"> Change Address </button>   
+            </div>
+           
+          <!-- </div>
+          
+        </form>
+    </div>
+</div>
+ -->
+
