@@ -7,6 +7,5 @@ import "bootstrap/dist/css/bootstrap.min.css";
 })
 export class AppComponent {
   title = 'orderapi';
-
-  
+  currentitem = "telivision"; 
 }

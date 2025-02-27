@@ -16,11 +16,11 @@
                                         </h6>
                                     </div>
 
-                                    <h3 class="mb-0 font-weight-semibold"> {{item.name}}</h3>
+                                    <h3 class="mb-0 font-weight-semibold">{{item.name}}</h3>
                                     <h3 class="mb-0 font-weight-semibold">Rs {{item.price}}</h3>
                                     <div style="display:inline-flex; gap :15px">
-                                    <button type="button" class="btn bg-cart"  (click) ="addToCart(item)"><i class="fa fa-cart-plus mr-2"></i> Add to cart</button> 
-                                    <button type="button" class="btn bg-wish"  (click) ="addToWishList(item)"><i class="fa fa-cart-plus mr-2"></i> Add to WishList</button>
+                                    <button type="button" class="btn bg-cart" (click) ="addToCart(item)"><i class="fa fa-cart-plus mr-2"></i> Add to cart</button> 
+                                    <button type="button" class="btn bg-wish" (click) ="addToWishList(item)"><i class="fa fa-cart-plus mr-2"></i> Add to WishList</button>
                                     <button type="button" class="btn bg-buy"  (click) ="BuyItem(item)"><i class="fa fa-cart-plus mr-2"></i> Buy</button>  
                                 </div>
                             </div>                   

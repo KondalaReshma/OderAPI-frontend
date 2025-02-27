@@ -1,5 +1,5 @@
 
-import  $ from 'jquery';
+//import  $ from 'jquery';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component, Inject, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
@@ -20,11 +20,7 @@ export class UserComponent implements OnInit {
 
   }
  
-  ngOnInit() {
-
-
-
-  }
+  ngOnInit() { }
 
 
   onSubmit(form : NgForm){

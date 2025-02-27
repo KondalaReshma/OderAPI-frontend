@@ -1,4 +1,4 @@
-<p>manageaddress works!</p>
+<h4 class="h">Manage Address My Address </h4>
 <div class="row">
     <div class="col-xs-12">
         <form  (ngSubmit) = "onSubmit(f)"  #f = "ngForm"> 
@@ -12,9 +12,7 @@
                   class="form-control"
                   ngModel
                   name="streetname"
-                  required>
-
-                  
+                  required>                 
               <label for ="State">City</label>
                 <input 
                 type ="text" 
@@ -24,7 +22,6 @@
                 name = "city"
                 required 
                  ngModel>
-                
                 <label for ="State">State</label>
                 <input 
                 type ="text" 
@@ -43,9 +40,6 @@
                  name="country"
                  required>
 
-                 
-
-
                 <label for ="Pincode">Pincode</label>
                 <input 
                 type ="text"
@@ -53,22 +47,18 @@
                  class="form-control"
                  ngModel
                  name="pincode"
-                 required
-                 >
+                 required>
 
             </div>
            
           </div>
-          <div class="row" ></div>>
+          <div class="row" ></div>
             <div class="col-sm-5 form-group" style="display:inline-flex; gap :15px">
-                <button type = "submit" class="btn btn-primary">Add Address </button>
-                <button type = "submit" class="btn btn-primary"> Change Address </button>   
-            </div>
-           
-          <!-- </div>
-          
-        </form>
+                <button type = "submit" class="btn btn-primary"    [disabled] =" ! f.valid ">Add Address </button>
+                <button type = "submit" class="btn btn-primary"    [disabled] =" ! f.valid "> Change Address </button>   
+            </div>          
+         </form>
     </div>
-</div>
- -->
+</div> 
+
 

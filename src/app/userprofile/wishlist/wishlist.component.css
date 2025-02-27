@@ -1,3 +1,12 @@
+.h{
+    background-color: coral;
+    color: black;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left:8px;
+}
+
+
 .card img{
     height: 160px;
 }

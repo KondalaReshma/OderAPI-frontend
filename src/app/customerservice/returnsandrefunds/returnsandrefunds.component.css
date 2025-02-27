@@ -1,0 +1,16 @@
+.h{
+    background-color: coral;
+    color: black;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left:8px;
+}
+.center {
+     
+    height: 400px;
+    padding-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }

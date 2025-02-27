@@ -1,8 +1,7 @@
 <app-header></app-header>
-<p>user component!</p>
-<head>
-  <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
-</head>
+<!-- <p>user component!</p> -->
+ <head>
+ </head>
   <script src="user.js"></script>
 <div class="row">
     <div class="col-xs-12">
@@ -14,8 +13,8 @@
                 type ="text"
                  id="name"
                  class="form-control"
+                 name= "username"
                  ngModel
-                 name="username"
                  required>
                 <label for ="Email">Email</label>
                 <input 
@@ -27,7 +26,7 @@
                 required
                 email
                 #email = "ngModel">
-                <span class="help-block" *ngIf =" !email.valid  && email.touched ">Please Enter valid email !</span>
+                <span class="help-block" *ngIf =" !email.valid  && email.touched"> Please Enter valid email !</span>
                 <label for ="name">Password</label>
                 <input 
                 type ="text" 
@@ -35,20 +34,9 @@
                 class="form-control"
                 ngModel
                 name = "password"
-                required
-
+                required>
                 
->
 
-
-                <!-- <label for ="Address">Address</label>
-                <input 
-                type ="text"
-                 id="name"
-                 class="form-control"
-                 ngModel
-                 name="address"
-                 required> -->
             </div>
            
           </div>
@@ -57,7 +45,7 @@
 
             <img src="assets\images\i1.jpg" alt="" width="1000px" height="600px">
             <img src="assets\images\i2.jpg" alt="" width="1000px" height="600px">
-            <img src="assets\images\i3.webp" alt="" width="1000px" height="600px">
+            <!-- <img src="assets\images\i3.webp" alt="" width="1000px" height="600px"> -->
             
             
           </div>
@@ -66,12 +54,7 @@
           <div class="row">
             <div class="col-sm-5 form-group">
                 <button type = "submit" class="btn btn-primary"  [disabled] =" ! f.valid ">SIGN IN</button>
-            </div>
-
-
-            
-
-           
+            </div>  
            
           </div>
           

@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output ,Input} from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,14 +6,16 @@ import { Router } from '@angular/router';
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
-export class HeaderComponent  implements OnInit{
+export class HeaderComponent   {
 
 constructor(private router : Router){}
 
+//  @Input()item ="";
 
-ngOnInit(): void {
+
+// ngOnInit(): void {
   
-}
+// }
 
 //  @Output() userSelected  = new EventEmitter<string>();
 //  @Output() itemSelected = new EventEmitter<string>();

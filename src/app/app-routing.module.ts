@@ -28,8 +28,6 @@ const appRoutes : Routes =
         {path:'about',component:AboutComponent},
         {path:'returnsandrefunds',component:ReturnsandrefundsComponent},
         {path:'paymentsettings',component:PaymentsettingsComponent}
-       
-
               ]
     },  
     {path:'userprofile',component:UserprofileComponent,
